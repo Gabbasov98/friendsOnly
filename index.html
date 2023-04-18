@@ -12,7 +12,7 @@
 
 <body class="page">
     <div class="wrapper">
-        <header class="header">
+        <header id="top" class="header">
             <div class="container">
     <div class="header__inner">
         <a href="" class="header__logo">
@@ -21,13 +21,13 @@
 
         <div class="menu">
             <nav class="nav">
-                <a href="" class="nav__link">
+                <a href="#about" class="nav__link">
                     <span>О компании</span>
                 </a>
-                <a href="" class="nav__link">
+                <a href="#team" class="nav__link">
                     <span>Наша команда</span>
                 </a>
-                <a href="" class="nav__link">
+                <a href="vacancy.html" class="nav__link">
                     <span>Вакансии</span>
                 </a>
             </nav>
@@ -35,7 +35,7 @@
                 <a href="" class="header-buttons__in">
                     <img src="img/in.svg" alt="">
                 </a>
-                <a href="" class="header-buttons__call m-btn m-btn-outline">
+                <a href="mailto:hr@friendsonly.me" class="header-buttons__call m-btn m-btn-outline">
                     <span>Напишите нам</span>
                 </a>
             </div>
@@ -57,14 +57,16 @@
                         <h1 class="main__title text40">
                             Реализуй себя вместе с нами
                         </h1>
-                        <button class="main__btn m-btn m-btn-white">
+                        <a href="vacancy.html" class="main__btn m-btn m-btn-white">
                             <span>Все вакансии</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <section class="who">
+            <p>djhjfhjdf</p>
+
+            <section class="who" id="about">
                 <div class="container _small">
                     <div class="who__inner">
                         <p class="who__subtitle text40">Кто мы</p>
@@ -75,7 +77,7 @@
                         <div class="who__text">
                             <h3 class="display2">
                                 <span class="accent-text">любых интересов</span>, <br> возрастов привилегий <br>
-                                и бюджетов.
+                                и бюджетов
                             </h3>
                         </div>
                         <span class="round round1"></span>
@@ -106,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="team">
+            <section class="team" id="team">
                 <div class="container _small">
                     <div class="team__inner">
                         <p class="team__subtitle text40">Команда</p>
@@ -293,7 +295,7 @@
                 </div>
             </section>
 
-            <section class="cool  z-3">
+            <section class="cool z-3" id="cool">
                 <div class="container _small">
                     <div class="cool__top">
                         <p class="display2">
@@ -337,27 +339,41 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=dZRqB0JLizw&t" class="video">
-                                            <div class="video__img">
-                                                <img src="img/video.jpg" alt="">
-                                            </div>
-                                            <span class="video__play">
-                                                <img src="img/play.svg" alt="">
-                                            </span>
-                                        </a>
-                                    </div>
+    <a data-fancybox="video-gallery" href="videos/Countdown7.mp4" class="video">
+        <div class="video__img">
+            <img src="img/video.jpg" alt="">
+        </div>
+        <span class="video__play">
+            <img src="img/play.svg" alt="">
+        </span>
+    </a>
+</div>
+
                                     <div class="swiper-slide">
-                                        <a data-fancybox="video-gallery" href="videos/Countdown7.mp4" class="video">
-                                            <div class="video__img">
-                                                <img src="img/video.jpg" alt="">
-                                            </div>
-                                            <span class="video__play">
-                                                <img src="img/play.svg" alt="">
-                                            </span>
-                                        </a>
-                                    </div>
+    <a data-fancybox="video-gallery" href="videos/Countdown7.mp4" class="video">
+        <div class="video__img">
+            <img src="img/video.jpg" alt="">
+        </div>
+        <span class="video__play">
+            <img src="img/play.svg" alt="">
+        </span>
+    </a>
+</div>
+
+                                    <div class="swiper-slide">
+    <a data-fancybox="video-gallery" href="videos/Countdown7.mp4" class="video">
+        <div class="video__img">
+            <img src="img/video.jpg" alt="">
+        </div>
+        <span class="video__play">
+            <img src="img/play.svg" alt="">
+        </span>
+    </a>
+</div>
+
                                 </div>
                             </div>
+                            <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
@@ -372,9 +388,9 @@
                         <h1 class="main__title text40">
                             Мы ишем талантливых специалистов
                         </h1>
-                        <button class="main__btn m-btn m-btn-white">
+                        <a href="vacancy.html" class="main__btn m-btn m-btn-white">
                             <span>Хочу работать в FO</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -402,7 +418,7 @@
             </div>
         </div>
         <div class="footer__col">
-            <a href="" class="footer__btn m-btn m-btn-linear">
+            <a href="index.html#cool" class="footer__btn m-btn m-btn-linear">
                 <span>Почему в FO классно?</span>
             </a>
         </div>
