@@ -15,7 +15,7 @@
         <header id="top" class="header">
             <div class="container">
     <div class="header__inner">
-        <a href="" class="header__logo">
+        <a href="index.html" class="header__logo">
             <img src="img/logo.svg" alt="">
         </a>
 
@@ -34,7 +34,7 @@
                 </a>
             </nav>
             <div class="header-buttons">
-                <a href="" class="header-buttons__in">
+                <a href="https://www.linkedin.com/company/80874796/admin/" class="header-buttons__in">
                     <img src="img/in.svg" alt="">
                 </a>
                 <a href="mailto:hr@friendsonly.me" class="header-buttons__call m-btn m-btn-outline">
@@ -159,7 +159,11 @@
                                         </ul>
                                     </div>
                                     <div class="vacancy-text__nav">
-                                        <button class="vacancy-text__btn m-btn m-btn-white">
+                                        <button
+                                            class="vacancy-text__btn m-btn m-btn-white"
+                                            data-modal="requestModal"
+                                            data-title="Team Lead Golang Developer"
+                                        >
                                             <span>Откликнуться</span>
                                         </button>
                                     </div>
@@ -261,7 +265,11 @@
                                         </ul>
                                     </div>
                                     <div class="vacancy-text__nav">
-                                        <button class="vacancy-text__btn m-btn m-btn-white">
+                                        <button
+                                                class="vacancy-text__btn m-btn m-btn-white"
+                                                data-modal="requestModal"
+                                                data-title="Project manager"
+                                        >
                                             <span>Откликнуться</span>
                                         </button>
                                     </div>
@@ -363,7 +371,11 @@
                                         </ul>
                                     </div>
                                     <div class="vacancy-text__nav">
-                                        <button class="vacancy-text__btn m-btn m-btn-white">
+                                        <button
+                                                class="vacancy-text__btn m-btn m-btn-white"
+                                                data-modal="requestModal"
+                                                data-title="Payment manager"
+                                        >
                                             <span>Откликнуться</span>
                                         </button>
                                     </div>
@@ -468,7 +480,11 @@
                                         </ul>
                                     </div>
                                     <div class="vacancy-text__nav">
-                                        <button class="vacancy-text__btn m-btn m-btn-white">
+                                        <button
+                                                class="vacancy-text__btn m-btn m-btn-white"
+                                                data-modal="requestModal"
+                                                data-title="Social Network User Support Manager"
+                                        >
                                             <span>Откликнуться</span>
                                         </button>
                                     </div>
@@ -636,19 +652,19 @@
             <div class="container">
     <div class="footer__inner">
         <div class="footer__col">
-            <a href="" class="footer__logo">
+            <a href="index.html" class="footer__logo">
                 <img src="img/logo.svg" alt="">
             </a>
         </div>
         <div class="footer__col">
             <div class="footer__links">
-                <a href="" class="footer__link">
+                <a href="index.html#about" class="footer__link">
                     <span>О компании</span>
                 </a>
-                <a href="" class="footer__link">
+                <a href="index.html#team" class="footer__link">
                     <span>Наша команда</span>
                 </a>
-                <a href="" class="footer__link">
+                <a href="vacancy.html" class="footer__link">
                     <span>Вакансии</span>
                 </a>
             </div>
@@ -680,6 +696,63 @@
 
         </footer>
     </div>
+    <div class="modal" id="requestModal">
+    <div class="modal__bg _close-modal"></div>
+    <div class="modal__dialog">
+        <button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.778466 13.2233C-0.0806862 14.0824 -0.0806875 15.4754 0.778467 16.3345C1.63762 17.1937 3.03058 17.1937 3.88973 16.3345L8.55664 11.6676L13.2235 16.3345C14.0827 17.1937 15.4757 17.1937 16.3348 16.3345C17.194 15.4754 17.194 14.0824 16.3348 13.2233L11.6679 8.55634L16.3348 3.88944C17.194 3.03029 17.194 1.63733 16.3348 0.778172C15.4757 -0.0809799 14.0827 -0.0809794 13.2235 0.778173L8.55664 5.44508L3.88974 0.778173C3.03058 -0.0809803 1.63762 -0.0809799 0.778468 0.778172C-0.0806862 1.63733 -0.0806837 3.03029 0.778469 3.88944L5.44537 8.55634L0.778466 13.2233Z" fill="black"/>
+            </svg>
+        </button>
+        <div class="modal__inner">
+            <div class="modal__info">
+                <div class="modal__title text45">
+                    Откликнуться на вакансию
+                </div>
+                <div class="modal__desc">
+                    Team Lead Golang Developer
+                </div>
+            </div>
+        </div>
+        <div class="modal__form">
+            <div class="modal__form-grid">
+                <fieldset class="fg _full">
+                    <input type="text" placeholder="*ФИО">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="email" placeholder="*e-mail">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="tel" placeholder="*Телефон">
+                </fieldset>
+                <fieldset class="fg _full">
+                    <textarea placeholder="Коротко расскажите о себе"></textarea>
+                </fieldset>
+                <div class="m-check _full">
+                    <input id="hasResume" type="checkbox">
+                    <label>
+                        <span>У меня есть резюме</span>
+                    </label>
+                </div>
+                <div class="file-input _full">
+                    <input type="file">
+                    <div class="file-input__wrap">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4614 9.15288C15.2106 9.00804 14.8898 9.09399 14.7449 9.34487L11.86 14.3417C11.5703 14.8435 10.9287 15.0154 10.4269 14.7257C9.92519 14.436 9.75328 13.7944 10.043 13.2926L12.9279 8.29581C13.6521 7.04141 15.2561 6.61162 16.5105 7.33585C17.7649 8.06008 18.1947 9.66407 17.4705 10.9185L14.5855 15.9153C13.4268 17.9223 10.8604 18.61 8.85335 17.4512C6.84632 16.2925 6.15866 13.7261 7.31742 11.719L9.41555 8.08499C9.70524 7.58323 10.3468 7.41131 10.8486 7.701C11.3504 7.9907 11.5223 8.63229 11.2326 9.13405L9.13445 12.7681C8.55507 13.7716 8.8989 15.0548 9.90242 15.6342C10.9059 16.2136 12.1891 15.8698 12.7685 14.8662L15.6534 9.8694C15.7983 9.61852 15.7123 9.29773 15.4614 9.15288Z" fill="black"/>
+                        </svg>
+                        <span>Загрузить рекомендательное письмо, резюме или портфолио (до 10 мб)</span>
+                    </div>
+                </div>
+                <div class="modal__nav _full">
+                    <button class="modal__btn m-btn m-btn-white">
+                        <span>Откликнуться</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
     <script src="js/libs.min.js"></script>
 <script type="module" src="js/ScrollToPlugin.js"></script>
